@@ -333,18 +333,11 @@
                     <h1>Featured Product</h1>
                 </div>
                 <div class="row align-items-center product-slider product-slider-4">
-                    {% for prod in prods%}
+                    {% for prod in prods %}
                     <div class="col-lg-3">
                         <div class="product-item">
                             <div class="product-title">
-                                <a href="#">{{prod.name}}</a>
-                                <div class="ratting">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                <a href="product-detail.html">{{prod.name}}</a>
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
@@ -357,6 +350,7 @@
                                 </div>
                             </div>
                             <div class="product-price">
+                                <h5>{{prod.desc}}</h5>
                                 <h3><span>$</span>{{prod.price}}</h3>
                                 <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
